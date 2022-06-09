@@ -3,6 +3,9 @@ const { Op } = require("sequelize");
 const { sequelize } = require('../database/models');
 
 const mainController = {
+  home:(req,res)=>{
+    res.render('../home.html');
+  },
   index: (req,res) =>{
     db.Capitulo.findAll({
       include: [{association: "seccion"}]

@@ -19,6 +19,7 @@ const upload = multer({ storage: storage });
 
 
 /* GET home page. */
+router.get('/', mainController.home);
 router.get('/capitulos', mainController.index);
 router.get('/nico', mainController.listNico);
 router.get('/search', mainController.search);
