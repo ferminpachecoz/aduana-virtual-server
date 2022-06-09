@@ -4,7 +4,7 @@ const { sequelize } = require('../database/models');
 
 const mainController = {
   home:(req,res)=>{
-    res.render('../home.html');
+    res.send('Servidor de Express!');
   },
   index: (req,res) =>{
     db.Capitulo.findAll({
